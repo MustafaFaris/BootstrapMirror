@@ -23,5 +23,6 @@ See, Simple as that!
 
 ## Documentation
 Visit the project page for a live demo with more information, showcases, and examples.
+
 [MustafaFaris.github.io](https://mustafafaris.github.io)
 
