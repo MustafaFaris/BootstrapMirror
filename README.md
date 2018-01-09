@@ -1,7 +1,7 @@
 # BootstrapMirror
 The simplest way to add RTL page layout support to Bootstrap 3.
 
-![preview](https://raw.github.com/MustafaFaris/bootstrapmirror/img/intro.png)
+![preview](https://raw.github.com/MustafaFaris/bootstrapmirror/img/intro.jpg)
 
 - [Introduction](https://github.com/MustafaFaris/bootstrapmirror#introduction)
 - [Compatiblity](https://github.com/MustafaFaris/bootstrapmirror#compatiblity)
