@@ -2,7 +2,7 @@ body {
 	direction: ltr !important;
 }
 
-body.mirror {
+body.bs-mirror {
 	direction: rtl !important;
 }
 
@@ -63,6 +63,15 @@ body.mirror {
     border-color: white;
 }
 
+.bs-mirror .header p, .bs-mirror .header a, .bs-mirror .header button{
+	direction: ltr;
+	text-align: right;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
 .container-main {
 	padding: 40px 15px;
 }
@@ -105,23 +114,38 @@ body.mirror {
     right: 15px;
 }
 
-
-button.btn-outline-inverse#bs-mirror-btn-float {
+.mirror-button {
+	display: none;
 	position: fixed;
-	background: #6f5499;
 	bottom:25px;
 	right:25px;
 	z-index: 99;
 }
 
-.bs-mirror button.btn-outline-inverse#bs-mirror-btn-float {
-	left: 25px;
-	right:0;
+button.btn-outline-inverse#bs-mirror-btn-float {
+	background: #6f5499;
 }
 
+button#bs-mirror-btn-float:focus {
+    outline-width: 0;
+}
+
+.bs-mirror .mirror-button {
+	left: 25px;
+	right: auto;
+}
 
 ul.bs-sidebar  {
 	padding: 0 20px !important;
+}
+
+.affix {
+  top: 80px;
+  z-index: 9999 !important;
+}
+
+.affix-bottom {
+  position: absolute;
 }
 
 .bs-sidebar.nav-pills>li>a {
@@ -140,7 +164,6 @@ ul.bs-sidebar  {
     color: #563d7c;
 }
 
-
 .bs-sidebar.nav-stacked>li {
     float: none;
 }
@@ -157,7 +180,6 @@ ul.bs-sidebar  {
     border-left: none ;
     border-right: solid 2px transparent;
 }
-
 
 .bs-sidebar ul.dropdown-menu {
     padding: 0;
@@ -196,22 +218,27 @@ ul.bs-sidebar  {
 	color: white;
 }
 
-
 @media screen and (max-width: 767px) {
 	.header {
 	    padding: 50px 5px 65px;
 	}	
+
 	.header h1 {
 	    font-size: 50px;
 	}
+
 	.header p {
 	    font-size: 22px;
 	}
+
 	button.btn-outline-inverse#bs-mirror-btn-float {
+		border: none;
+    	border-radius: 0;
 		bottom:0;
 		right:auto;
 		width: 100%;
 	}
+
 	.bs-mirror button.btn-outline-inverse#bs-mirror-btn-float {
 		left: auto;
 		right:auto;
