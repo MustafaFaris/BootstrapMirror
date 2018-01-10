@@ -16,9 +16,11 @@ The plugin is fully compatible with Bootstrap 3.3.7, and is fully functional on 
 
 ## Usage
 Using this plugin is a peice of cake. You will only need to:
- -Include the CSS file `bootstrap-mirror.css` in your code.
- -Apply the class `.bs-mirror` directly to the `<body>` or basically to any component that you want to mirror.
- -Voilà! The page layout and all Bootstrap components are now RTL.
+
+- Include the CSS file `bootstrap-mirror.css` in your code.
+- Apply the class `.bs-mirror` directly to the `<body>` or basically to any component that you want to mirror.
+- Voilà! The page layout and all Bootstrap components are now RTL.
+ 
 See, Simple as that!
 
 ## Documentation
