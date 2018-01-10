@@ -231,15 +231,19 @@ ul.bs-sidebar  {
 	    font-size: 22px;
 	}
 
-	button.btn-outline-inverse#bs-mirror-btn-float {
-		border: none;
-    	border-radius: 0;
+	.mirror-button {
 		bottom:0;
 		right:auto;
 		width: 100%;
 	}
 
-	.bs-mirror button.btn-outline-inverse#bs-mirror-btn-float {
+	button.btn-outline-inverse#bs-mirror-btn-float {
+		border: none;
+    	border-radius: 0;
+    	width: 100%;
+	}
+
+	.bs-mirror .mirror-button {
 		left: auto;
 		right:auto;
 	}
